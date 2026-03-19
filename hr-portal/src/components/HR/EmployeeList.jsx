@@ -11,8 +11,16 @@ export default function EmployeeList() {
   }, []);
 
   const deleteEmployee = async (id) => {
+    const employee = employees.find((e) => e.id === id);
+    if (!employee) return;
+
+    const confirmed = window.confirm(`Do you really want to delete employee ${employee.fname} ${employee.lname}?`);
+    if (!confirmed) return;
+
     await fetch(`http://localhost:5000/employees/${id}`, { method: "DELETE" });
-    setEmployees(employees.filter(e => e.id !== id));
+    setEmployees(employees.filter((e) => e.id !== id));
+
+    alert(`Employee deleted: ${employee.fname} ${employee.lname} (${employee.email})`);
   };
 
   const thStyle = { border: "1px solid #ccc", padding: "8px", backgroundColor: "#f4f4f4", textAlign: "left" };

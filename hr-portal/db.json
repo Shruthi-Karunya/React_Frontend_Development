@@ -57,23 +57,6 @@
   ],
   "employees": [
     {
-      "id": "1",
-      "fname": "John",
-      "lname": "Doe",
-      "email": "john@gmail.com",
-      "password": "john123",
-      "role": "employee",
-      "firstLogin": false,
-      "age": "20"
-    },
-    {
-      "id": "3",
-      "fname": "Will",
-      "lname": "Smith",
-      "age": 28,
-      "email": "will@gmail.com"
-    },
-    {
       "id": "fedf",
       "fname": "Karunya",
       "lname": "Shrohith",
@@ -93,7 +76,8 @@
       "role": "employee",
       "firstLogin": false,
       "age": "30",
-      "availableCL": 10
+      "availableCL": 10,
+      "availableSL": 11
     }
   ],
   "leaves": [
@@ -129,7 +113,7 @@
     },
     {
       "id": "a5ee",
-      "employeeId": "1",
+      "employeeId": null,
       "status": "cancelled",
       "reason": "sick",
       "leaveType": "SL",
@@ -137,7 +121,7 @@
     },
     {
       "id": "0556",
-      "employeeId": "1",
+      "employeeId": null,
       "status": "rejected",
       "reason": "Pls plan some other day due to Buisness dependency",
       "leaveType": "CL",
@@ -177,6 +161,24 @@
       "leaveType": "SL",
       "days": 1,
       "dateApplied": "2026-03-14"
+    },
+    {
+      "id": "edc7",
+      "employeeId": "70e8",
+      "status": "approved",
+      "reason": "Approved by HR",
+      "leaveType": "SL",
+      "days": 1,
+      "dateApplied": "2026-03-13"
+    },
+    {
+      "id": "9b04",
+      "employeeId": "70e8",
+      "status": "rejected",
+      "reason": "BL cannot be applied for futire date",
+      "leaveType": "BL",
+      "days": 1,
+      "dateApplied": "2026-03-21"
     }
   ]
 }

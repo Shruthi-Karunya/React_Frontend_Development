@@ -1,0 +1,182 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fname": "John",
+      "lname": "Doe",
+      "email": "john@gmail.com",
+      "password": "john123",
+      "role": "employee",
+      "firstLogin": false
+    },
+    {
+      "id": "2",
+      "fname": "Jane",
+      "lname": "Smith",
+      "email": "jane@gmail.com",
+      "password": "jane123",
+      "role": "hr",
+      "firstLogin": false
+    },
+    {
+      "id": "3",
+      "fname": "Will",
+      "lname": "Smith",
+      "email": "will@gmail.com",
+      "password": "will123",
+      "role": "employee",
+      "firstLogin": false
+    },
+    {
+      "id": "fedf",
+      "fname": "Karunya",
+      "lname": "Shrohith",
+      "email": "karunya@gmail.com",
+      "password": "karunya@321",
+      "role": "employee",
+      "firstLogin": false
+    },
+    {
+      "id": "70e8",
+      "fname": "koyal",
+      "lname": "gumma",
+      "email": "koyal@gmail.com",
+      "password": "koyal123",
+      "role": "employee",
+      "firstLogin": false
+    }
+  ],
+  "hr": [
+    {
+      "id": "2",
+      "fname": "Jane",
+      "lname": "Smith",
+      "email": "jane@gmail.com",
+      "department": "Human Resources"
+    }
+  ],
+  "employees": [
+    {
+      "id": "1",
+      "fname": "John",
+      "lname": "Doe",
+      "email": "john@gmail.com",
+      "password": "john123",
+      "role": "employee",
+      "firstLogin": false,
+      "age": "20"
+    },
+    {
+      "id": "3",
+      "fname": "Will",
+      "lname": "Smith",
+      "age": 28,
+      "email": "will@gmail.com"
+    },
+    {
+      "id": "fedf",
+      "fname": "Karunya",
+      "lname": "Shrohith",
+      "email": "karunya@gmail.com",
+      "password": "karunya@321",
+      "role": "employee",
+      "firstLogin": false,
+      "availableBL": 5,
+      "availableSL": 12
+    },
+    {
+      "id": "70e8",
+      "fname": "koyal",
+      "lname": "gumma",
+      "email": "koyal@gmail.com",
+      "password": "koyal123",
+      "role": "employee",
+      "firstLogin": false,
+      "age": "30",
+      "availableCL": 10
+    }
+  ],
+  "leaves": [
+    {
+      "id": "1",
+      "employeeId": 1,
+      "status": "pending",
+      "reason": "Medical"
+    },
+    {
+      "id": "5",
+      "employeeId": 1,
+      "status": "rejected",
+      "reason": "Reapply as date is incorrect"
+    },
+    {
+      "id": "4",
+      "employeeId": 3,
+      "status": "approved",
+      "reason": "Approved by HR"
+    },
+    {
+      "id": "2",
+      "employeeId": 3,
+      "status": "approved",
+      "reason": "Approved by HR"
+    },
+    {
+      "id": "3",
+      "employeeId": 3,
+      "status": "rejected",
+      "reason": "Rejected by HR"
+    },
+    {
+      "id": "a5ee",
+      "employeeId": "1",
+      "status": "cancelled",
+      "reason": "sick",
+      "leaveType": "SL",
+      "dateApplied": "2026-03-12"
+    },
+    {
+      "id": "0556",
+      "employeeId": "1",
+      "status": "rejected",
+      "reason": "Pls plan some other day due to Buisness dependency",
+      "leaveType": "CL",
+      "dateApplied": "2026-03-20"
+    },
+    {
+      "id": "7d52",
+      "employeeId": "fedf",
+      "status": "cancelled",
+      "reason": "Approved by HR",
+      "leaveType": "BL",
+      "dateApplied": "2026-03-19"
+    },
+    {
+      "id": "7106",
+      "employeeId": "fedf",
+      "status": "cancelled",
+      "reason": "applied by mistake",
+      "leaveType": "SL",
+      "days": 1,
+      "dateApplied": "2026-03-19"
+    },
+    {
+      "id": "fe38",
+      "employeeId": "70e8",
+      "status": "approved",
+      "reason": "Approved by HR",
+      "leaveType": "CL",
+      "days": 2,
+      "dateApplied": "2026-03-23"
+    },
+    {
+      "id": "72c4",
+      "employeeId": "fedf",
+      "status": "cancelled",
+      "reason": "applied by misatke",
+      "leaveType": "SL",
+      "days": 1,
+      "dateApplied": "2026-03-14"
+    }
+  ]
+}
